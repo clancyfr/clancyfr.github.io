@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clancy fan project</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="wholepage">
+            <div>
+                <img src="logo.png" height="100px">
+            </div>
+
+            <div id="dateDiv">
+                <h1>Choisissez votre concert</h1>
+                <select id="dateSelect">
+                    <option value="" disabled selected>Sélectionnez une date</option>
+                </select>
+            </div>
+
+            <div id="sectionDiv">
+                <h1>Choisissez votre bloc</h1>
+                <select id="sectionSelect">
+                    <option value="" disabled selected>Sélectionnez votre bloc</option>
+                </select>
+            </div>
+
+            <div id="displayDiv">
+                <h1>
+                    <span id="colorPretext">La couleur de votre bloc est le</span> <span id="colorText"></span><span>.</span><br />
+                    <span id="colorSecondLine"><span>La couleur qui vous a été attribuée est le</span> <span id="colorText2"></span>.</span>
+                </h1>
+                <button id="overlayButton">Afficher écran de couleur</button>
+            </div>
+        </div>
+
+        <div id="overlayDiv">
+            <div id="closeOverlayDiv"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/fde82421bc.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

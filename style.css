@@ -1,0 +1,46 @@
+body {
+    background-image: url("1354873.png");
+    background-position: 50% 0%;
+
+    text-align: center;
+}
+
+#wholepage {
+    background-color: rgba(100, 100, 100, .5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#overlayDiv {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#closeOverlayDiv {
+    position: absolute;
+    font-size: 2rem;
+    top: 20px;
+    right: 20px;
+}
+
+#sectionDiv {
+    display: none;
+}
+
+#displayDiv {
+    display: none;
+}
+#overlayButton, select {
+    font-size: 1.5rem;
+}
+
+#wholepage > div {
+    margin-top: 50px;
+}
