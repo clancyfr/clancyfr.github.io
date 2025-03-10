@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Clancy fan project</title>
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css?v=2">
     </head>
     <body>
         <div id="wholepage">
@@ -14,26 +14,30 @@
             </div>
 
             <div id="dateDiv">
-                <h1>Choisissez votre concert</h1>
+                <h1><span class="tr" data-key="concertSel"></span></h1>
                 <select id="dateSelect">
-                    <option value="" disabled selected>Sélectionnez une date</option>
+                    <option value="" disabled selected class="tr" data-key="concertDateSel"></option>
                 </select>
             </div>
 
             <div id="sectionDiv">
-                <h1>Choisissez votre bloc</h1>
+                <h1><span class="tr" data-key="blocSel"></span></h1>
                 <select id="sectionSelect">
-                    <option value="" disabled selected>Sélectionnez votre bloc</option>
+                    <option value="" disabled selected class="tr" data-key="blocSel"></option>
                 </select>
             </div>
 
             <div id="displayDiv">
                 <h1>
-                    <span id="colorPretext">La couleur de votre bloc est le</span> <span id="colorText"></span><span>.</span><br />
-                    <span id="colorSecondLine"><span>La couleur qui vous a été attribuée est le</span> <span id="colorText2"></span>.</span>
+                    <span id="colorPretext" class="tr" data-key="blocColorPretext"></span> <span id="colorText" class="tr"></span><span>.</span><br />
+                    <span id="colorSecondLine"><span class="tr" data-key="blocColorSL"></span> <span id="colorText2" class="tr"></span>.</span>
                 </h1>
-                <button id="overlayButton">Afficher écran de couleur</button>
+                <button id="overlayButton"><span class="tr" data-key="displayOverlay"></span></button>
             </div>
+        </div>
+
+        <div id="translateToggles">
+            <span class="translateToggle" id="translateFR">FR</span> / <span class="translateToggle" id="translateEN">EN</span>
         </div>
 
         <div id="overlayDiv">
@@ -41,6 +45,6 @@
         </div>
 
         <script src="https://kit.fontawesome.com/fde82421bc.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        <script src="script.js?v=2"></script>
     </body>
 </html>

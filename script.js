@@ -54,6 +54,35 @@ const concerts = [
     }
 ];
 
+// Localization
+const translations = {
+    "en": {
+        "concertSel": "Choose your concert",
+        "concertDateSel": "Select a date",
+        "blocSel": "Select your section",
+        "blocColorPretext": "The color of your section is",
+        "blocColorPretext2": "The colors of your section are",
+        "blocColorSL": "The color you have been assigned is",
+        "displayOverlay": "Show fullscreen color",
+        "Fosse": "Pit",
+        "bleu": "blue",
+        "blanc": "white",
+        "rouge": "red",
+        "bleu,blanc,rouge": "blue,white,red",
+        "Lyon (24 Avril)": "Lyon (April 24th)",
+        "Paris (2 Mai)": "Paris (May 2nd)"
+    },
+    "fr": {
+        "concertSel": "Choisissez votre concert",
+        "concertDateSel": "Sélectionnez une date",
+        "blocSel": "Choisissez votre bloc",
+        "blocColorPretext": "La couleur de votre bloc est le",
+        "blocColorPretext2": "Les couleurs de votre bloc sont le",
+        "blocColorSL": "La couleur qui vous a été attribuée est le",
+        "displayOverlay": "Afficher la couleur en plein écran"
+    }
+};
+
 // Page elements
 const dateSelect = document.querySelector('#dateSelect');
 const sectionSelect = document.querySelector('#sectionSelect');
@@ -64,6 +93,8 @@ const displayDiv = document.querySelector('#displayDiv');
 const colorPretext = document.querySelector('#colorPretext');
 const colorSecondLine = document.querySelector('#colorSecondLine');
 const colorText2 = document.querySelector('#colorText2');
+const translateFR = document.querySelector('#translateFR');
+const translateEN = document.querySelector('#translateEN');
 let colorName;
 let color;
 
@@ -71,7 +102,9 @@ function addOptionToSelect(select, optionValue, optionText) {
     const option = document.createElement('option');
 
     option.value = optionValue;
-    option.text = optionText;
+    option.text = tr(optionText);
+    option.className = "tr";
+    option.dataset.key = optionText;
 
     select.add(option);
 }
@@ -90,10 +123,59 @@ function hideOverlay() {
     document.exitFullscreen().then(() => {}).catch((err) => {});
 }
 
+function getLanguage() {
+    const storedLanguage = localStorage.getItem("lang");
+    if (storedLanguage && storedLanguage in translations)
+        return storedLanguage;
+
+    const language = navigator.language.split('-')[0];
+    if (!(language in translations))
+        language = "fr";
+
+    localStorage.setItem("lang", language);
+    return language;
+}
+function tr(key) {
+    const language = getLanguage();
+
+    if (language in translations && key in translations[language])
+        return translations[language][key];
+
+    return key;
+}
+function trArray(keyArray) {
+    return keyArray.map((key) => tr(key));
+}
+function translateAll() {
+    document.querySelectorAll(".tr").forEach((span) => {
+        span.innerHTML = tr(span.dataset.key);
+    });
+}
+
+translateFR.onclick = () => {
+    localStorage.setItem("lang", "fr");
+    translateEN.classList.add("selectable");
+    translateFR.classList.remove("selectable");
+    translateAll();
+};
+translateEN.onclick = () => {
+    localStorage.setItem("lang", "en");
+    translateFR.classList.add("selectable");
+    translateEN.classList.remove("selectable");
+    translateAll();
+};
+
 window.onload = () => {
     concerts.forEach((concert, index) => {
         addOptionToSelect(dateSelect, index, concert.Name);
     });
+    
+    translateAll();
+    if (getLanguage() == "fr") {
+        translateEN.classList.add("selectable");
+    } else {
+        translateFR.classList.add("selectable");
+    }
 }
 
 dateSelect.onchange = () => {
@@ -104,6 +186,8 @@ dateSelect.onchange = () => {
     Object.keys(concerts[dateSelect.value].Sections).forEach((section) => {
         addOptionToSelect(sectionSelect, section, section);
     });
+
+    document.documentElement.scrollTo({left: 0, top: document.documentElement.scrollHeight, behavior: "smooth"});
 };
 
 sectionSelect.onchange = () => {
@@ -113,18 +197,25 @@ sectionSelect.onchange = () => {
 
     displayDiv.style.display = "block";
     if (typeof colorNames === "string") {
-        colorPretext.innerHTML = "La couleur de votre bloc est le"
+        colorPretext.innerHTML = tr("blocColorPretext")
+        colorPretext.dataset.key = "blocColorPretext";
         colorText.style.color = color;
-        colorText.innerHTML = colorName;
+        colorText.innerHTML = tr(colorName);
+        colorText.dataset.key = colorName;
         colorSecondLine.style.display = "none";
     } else {
-        colorPretext.innerHTML = "Les couleurs de votre bloc sont le"
+        colorPretext.innerHTML = tr("blocColorPretext2")
+        colorPretext.dataset.key = "blocColorPretext2";
         colorText.style.color = "black";
-        colorText.innerHTML = colorNames;
+        colorText.innerHTML = trArray(colorNames);
+        colorText.dataset.key = colorNames;
         colorSecondLine.style.display = "block";
         colorText2.style.color = color;
-        colorText2.innerHTML = colorName;
+        colorText2.innerHTML = tr(colorName);
+        colorText2.dataset.key = colorName;
     }
+
+    document.documentElement.scrollTo({left: 0, top: document.documentElement.scrollHeight, behavior: "smooth"});
 };
 
 overlayButton.onclick = displayOverlay;
