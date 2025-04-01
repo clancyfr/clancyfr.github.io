@@ -63,3 +63,25 @@ body {
     cursor:pointer;
     text-decoration:underline;
 }
+
+#informationBox {
+    font-size: 1.2em;
+    border: 2px solid #A93434;
+    border-radius: 50px;
+
+    background-color: rgba(171, 179, 57, 0.245); /*rgba(81, 23, 23, 0.245)*/
+    
+    padding: 20px;
+    margin: 20px;
+
+    padding-top: 80px;
+
+    position: relative;
+}
+#informationBox #infoIcon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #9b1e1e; /*#c7b93a*/
+    font-size: 2em;
+}

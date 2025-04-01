@@ -70,7 +70,10 @@ const translations = {
         "rouge": "red",
         "bleu,blanc,rouge": "blue,white,red",
         "Lyon (24 Avril)": "Lyon (April 24th)",
-        "Paris (2 Mai)": "Paris (May 2nd)"
+        "Paris (2 Mai)": "Paris (May 2nd)",
+        "explanation1": "Select your show and location to be assigned a color.",
+        "explanation2": "When <b>Mulberry Street</b> starts, put your phone on max brightness, show your color, and point your screen towards the stage.",
+        "explanation3": "<b>Note :</b> Don't hesitate to screenshot the color for easier access later."
     },
     "fr": {
         "concertSel": "Choisissez votre concert",
@@ -79,7 +82,10 @@ const translations = {
         "blocColorPretext": "La couleur de votre bloc est le",
         "blocColorPretext2": "Les couleurs de votre bloc sont le",
         "blocColorSL": "La couleur qui vous a été attribuée est le",
-        "displayOverlay": "Afficher la couleur en plein écran"
+        "displayOverlay": "Afficher la couleur en plein écran",
+        "explanation1": "Selectionnez votre concert et votre emplacement pour recevoir votre couleur.",
+        "explanation2": "Quand <b>Mulberry Street</b> commence, mettez votre luminosité au maximum, affichez votre couleur et pointez votre écran vers la scène.",
+        "explanation3": "<b>Note :</b> N'hésitez pas à faire une capture d'écran de votre couleur pour y accéder plus facilement après."
     }
 };
 
