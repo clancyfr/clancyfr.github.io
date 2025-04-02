@@ -184,6 +184,23 @@ window.onload = () => {
     }
 }
 
+function ensureElementPartiallyVisible(selector, minVisiblePixels = 10) {
+    const element = document.querySelector(selector);
+    if (!element) return;
+
+    const rect = element.getBoundingClientRect();
+    const currentScroll = window.scrollY;
+    const viewportHeight = window.innerHeight;
+
+    // The minimum required scroll position to make `minVisiblePixels` of the element visible
+    const requiredScroll = currentScroll + rect.top - viewportHeight + minVisiblePixels;
+
+    if (currentScroll < requiredScroll) {
+        window.scrollTo({ top: requiredScroll, behavior: "smooth" });
+    }
+}
+
+
 dateSelect.onchange = () => {
     sectionDiv.style.display = "block";
 
@@ -193,7 +210,8 @@ dateSelect.onchange = () => {
         addOptionToSelect(sectionSelect, section, section);
     });
 
-    document.documentElement.scrollTo({left: 0, top: document.documentElement.scrollHeight, behavior: "smooth"});
+    //document.documentElement.scrollTo({left: 0, top: document.documentElement.scrollHeight, behavior: "smooth"});
+    ensureElementPartiallyVisible("#informationBox");
 };
 
 sectionSelect.onchange = () => {
@@ -221,7 +239,8 @@ sectionSelect.onchange = () => {
         colorText2.dataset.key = colorName;
     }
 
-    document.documentElement.scrollTo({left: 0, top: document.documentElement.scrollHeight, behavior: "smooth"});
+    //document.documentElement.scrollTo({left: 0, top: document.documentElement.scrollHeight, behavior: "smooth"});
+    ensureElementPartiallyVisible("#informationBox");
 };
 
 overlayButton.onclick = displayOverlay;

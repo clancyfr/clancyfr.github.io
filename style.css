@@ -85,3 +85,21 @@ body {
     color: #9b1e1e; /*#c7b93a*/
     font-size: 2em;
 }
+#informationBoxImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#informationBoxImages img {
+    max-width: 50%;
+}
+@media (max-width: 768px) {
+    #informationBoxImages {
+        flex-direction: column;
+    }
+    #informationBoxImages img {
+        max-width: 100%;
+    }
+}
