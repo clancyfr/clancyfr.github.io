@@ -91,15 +91,25 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 60px;
 }
-#informationBoxImages img {
+#informationBoxImages span {
+    font-size: 50px;
+    font-weight: bold;
+}
+#informationBoxImages div {
+    display: flex;
+    flex-direction: column;
+}
+#informationBoxImages div {
     max-width: 50%;
 }
 @media (max-width: 768px) {
     #informationBoxImages {
         flex-direction: column;
+        gap: 60px;
     }
-    #informationBoxImages img {
+    #informationBoxImages div {
         max-width: 100%;
     }
 }
