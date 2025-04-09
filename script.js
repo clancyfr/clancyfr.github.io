@@ -73,7 +73,8 @@ const translations = {
         "Paris (2 Mai)": "Paris (May 2nd)",
         "explanation1": "Select your show and location to be assigned a color.",
         "explanation2": "When <b>Mulberry Street</b> starts, put your phone on max brightness, show your color, and point your screen towards the stage.",
-        "explanation3": "<b>Note :</b> Don't hesitate to screenshot the color for easier access later."
+        "explanation3": "<b>Note :</b> Don't hesitate to screenshot the color for easier access later.",
+        "share": "Share the project with your neighbours"
     },
     "fr": {
         "concertSel": "Choisissez votre concert",
@@ -85,7 +86,8 @@ const translations = {
         "displayOverlay": "Afficher la couleur en plein écran",
         "explanation1": "Selectionnez votre concert et votre emplacement pour recevoir votre couleur.",
         "explanation2": "Quand <b>Mulberry Street</b> commence, mettez votre luminosité au maximum, affichez votre couleur et pointez votre écran vers la scène.",
-        "explanation3": "<b>Note :</b> N'hésitez pas à faire une capture d'écran de votre couleur pour y accéder plus facilement après."
+        "explanation3": "<b>Note :</b> N'hésitez pas à faire une capture d'écran de votre couleur pour y accéder plus facilement après.",
+        "share": "Partagez le projet avec vos voisins"
     }
 };
 
