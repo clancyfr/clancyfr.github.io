@@ -101,6 +101,7 @@ const colorText = document.querySelector('#colorText');
 const overlayDiv = document.querySelector('#overlayDiv');
 const displayDiv = document.querySelector('#displayDiv');
 const colorPretext = document.querySelector('#colorPretext');
+const colorFirstLine = document.querySelector('#colorFirstLine');
 const colorSecondLine = document.querySelector('#colorSecondLine');
 const colorText2 = document.querySelector('#colorText2');
 const translateFR = document.querySelector('#translateFR');
@@ -204,7 +205,6 @@ function ensureElementPartiallyVisible(selector, minVisiblePixels = 10) {
     }
 }
 
-
 dateSelect.onchange = () => {
     sectionDiv.style.display = "block";
 
@@ -227,6 +227,7 @@ sectionSelect.onchange = () => {
     if (typeof colorNames === "string") {
         colorPretext.innerHTML = tr("blocColorPretext")
         colorPretext.dataset.key = "blocColorPretext";
+        colorFirstLine.classList.remove('pretext');
         colorText.style.color = color;
         colorText.innerHTML = tr(colorName);
         colorText.dataset.key = colorName;
@@ -234,6 +235,7 @@ sectionSelect.onchange = () => {
     } else {
         colorPretext.innerHTML = tr("blocColorPretext2")
         colorPretext.dataset.key = "blocColorPretext2";
+        colorFirstLine.classList.add('pretext');
         colorText.style.color = "black";
         colorText.innerHTML = trArray(colorNames);
         colorText.dataset.key = colorNames;

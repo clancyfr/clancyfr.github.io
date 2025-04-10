@@ -1,10 +1,21 @@
-body {
+html {
     background-image: url("1354873-min.png");
     background-position: 50% 0%;
 
     text-align: center;
+    font-size: 21px;
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
+#logo {
+    height: 100px;
+}
+
+/* Semi-transparent overlay on the background */
 #wholepage {
     background-color: rgba(100, 100, 100, .7);
     position: absolute;
@@ -15,6 +26,7 @@ body {
     left: 0px;
 }
 
+/* Full-page popup */
 #overlayDiv {
     display: none;
     position: fixed;
@@ -24,7 +36,6 @@ body {
     top: 0px;
     left: 0px;
 }
-
 #closeOverlayDiv {
     position: absolute;
     font-size: 2rem;
@@ -32,44 +43,50 @@ body {
     right: 20px;
 }
 
+/* Hide dropdowns by default */
 #sectionDiv {
     display: none;
 }
-
 #displayDiv {
     display: none;
 }
-#overlayButton, select {
-    font-size: 1.5rem;
+
+.pretext {
+    font-size: 1.2rem;
+    font-weight: normal;
 }
 
+/* Size of inputs */
+#overlayButton, select {
+    font-size: 1.25rem;
+}
+
+/* Space elements vertically */
 #wholepage > div {
     margin-top: 50px;
 }
 
+/* Translate toggles in the top right */
 #translateToggles {
     position: absolute;
     top: 3%;
     right: 3%;
     margin-top: 0;
 }
-
 .translateToggle {
     color:rgb(24, 1, 1);
+    font-size: 0.8rem;
     font-weight: bold;
 }
-
 .translateToggle.selectable {
     cursor:pointer;
     text-decoration:underline;
 }
 
-#informationBox {
-    font-size: 1.2em;
-    border: 2px solid #A93434;
+/* Infoboxes */
+.box {
+    border: 2px solid;
     border-radius: 50px;
-
-    background-color: rgba(171, 179, 57, 0.245); /*rgba(81, 23, 23, 0.245)*/
     
     padding: 20px;
     margin: 20px;
@@ -78,33 +95,38 @@ body {
 
     position: relative;
 }
-#informationBox #infoIcon {
+.box .boxIcon {
     position: absolute;
     top: 20px;
     left: 20px;
-    color: #9b1e1e; /*#c7b93a*/
     font-size: 2em;
+}
+
+/* Mulberry infobox */
+#informationBox {
+    border-color: #A93434;
+    background-color: rgba(171, 179, 57, 0.245); /*rgba(81, 23, 23, 0.245)*/
+}
+#informationBox #infoIcon {
+    color: #9b1e1e; /*#c7b93a*/
 }
 #informationBoxImages {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     margin-top: 60px;
-}
-#informationBoxImages span {
-    font-size: 50px;
-    font-weight: bold;
+
+    flex-direction: row;
+    gap: 10px;
 }
 #informationBoxImages div {
     display: flex;
     flex-direction: column;
-}
-#informationBoxImages div {
+
     max-width: 50%;
 }
 @media (max-width: 768px) {
+    /* Put images in a column on small screens */
     #informationBoxImages {
         flex-direction: column;
         gap: 60px;
@@ -113,6 +135,24 @@ body {
         max-width: 100%;
     }
 }
+#informationBoxImages span {
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+/* Oldies infobox */
+#oldiesBox {
+    border-color: #26c47f;
+    background-color: rgba(105, 204, 163, 0.245); /*rgba(81, 23, 23, 0.245)*/
+}
+#oldiesBox #oldiesIcon {
+    color: #24a969;
+}
+#oldiesLyrics {
+    margin-top: 60px;
+}
+
+/* Qr Code area */
 #qrCode {
     display: flex;
     flex-direction: row;
@@ -131,29 +171,4 @@ body {
     max-width: 100%;
     margin-left: 50px;
     margin-right: 50px;
-}
-
-#oldiesBox {
-    font-size: 1.2em;
-    border: 2px solid #26c47f;
-    border-radius: 50px;
-
-    background-color: rgba(105, 204, 163, 0.245); /*rgba(81, 23, 23, 0.245)*/
-    
-    padding: 20px;
-    margin: 20px;
-
-    padding-top: 80px;
-
-    position: relative;
-}
-#oldiesLyrics {
-    margin-top: 60px;
-}
-#oldiesBox #oldiesIcon {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: #24a969; /*#c7b93a*/
-    font-size: 2em;
 }

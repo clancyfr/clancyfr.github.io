@@ -14,33 +14,33 @@
         -->
         <div id="wholepage">
             <div>
-                <img src="logo.png" height="100px">
+                <img id="logo" src="logo.png">
             </div>
 
             <div id="dateDiv">
-                <h1><span class="tr" data-key="concertSel">Choisissez votre concert</span></h1>
+                <div class="tr title" data-key="concertSel">Choisissez votre concert</div>
                 <select id="dateSelect">
                     <option value="" disabled selected class="tr" data-key="concertDateSel"></option>
                 </select>
             </div>
 
             <div id="sectionDiv">
-                <h1><span class="tr" data-key="blocSel">Choisissez votre bloc</span></h1>
+                <div class="tr title" data-key="blocSel">Choisissez votre bloc</div>
                 <select id="sectionSelect">
                     <option value="" disabled selected class="tr" data-key="blocSel"></option>
                 </select>
             </div>
 
             <div id="displayDiv">
-                <h1>
-                    <span id="colorPretext" class="tr" data-key="blocColorPretext"></span> <span id="colorText" class="tr"></span><span>.</span><br />
+                <div class="title">
+                    <span id="colorFirstLine" class="pretext"><span id="colorPretext" class="tr" data-key="blocColorPretext"></span> <span id="colorText" class="tr"></span>.</span><br />
                     <span id="colorSecondLine"><span class="tr" data-key="blocColorSL"></span> <span id="colorText2" class="tr"></span>.</span>
-                </h1>
+                </div>
                 <button id="overlayButton"><span class="tr" data-key="displayOverlay"></span></button>
             </div>
 
-            <div id="informationBox">
-                <span id="infoIcon"><i class="fa-solid fa-circle-info"></i></span>
+            <div id="informationBox" class="box">
+                <span id="infoIcon" class="boxIcon"><i class="fa-solid fa-circle-info"></i></span>
 
                 <span class="tr" data-key="explanation1">Selectionnez votre concert et votre emplacement pour recevoir votre couleur.</span><br />
                 <span class="tr" data-key="explanation2">À la fin de <b>Mulberry Street</b>, au signal de Tyler : mettez votre luminosité au maximum, affichez votre couleur et pointez votre écran vers la scène quand c'est votre tour.</span><br /><br />
@@ -58,8 +58,8 @@
                 </div>
             </div>
 
-            <div id="oldiesBox">
-                <span id="oldiesIcon"><i class="fa-solid fa-music"></i></span>
+            <div id="oldiesBox" class="box">
+                <span id="oldiesIcon" class="boxIcon"><i class="fa-solid fa-music"></i></span>
 
                 <span class="tr" data-key="explanation4">Pendant la pause à la fin de <b>Paladin Strait</b>, chantez le dernier couplet de <b>Oldies Stations</b> avec nous.</span>
 
