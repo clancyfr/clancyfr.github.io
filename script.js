@@ -75,7 +75,7 @@ const translations = {
         "explanation2": "At the end of <b>Mulberry Street</b>, on Tyler's instructions : put your phone on max brightness, show your color, and point your screen towards the stage when it's your turn.",
         "explanation3": "<b>Note :</b> Don't hesitate to screenshot the color for easier access later.",
         "explanation4": "During the break at the end of <b>Paladin Strait</b>, sing the last chorus of <b>Oldies Stations</b> with us.",
-        "share": "Share the project with your neighbours"
+        "share": "Share the project with your neighbors"
     },
     "fr": {
         "concertSel": "Choisissez votre concert",
