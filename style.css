@@ -119,16 +119,41 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 60px;
-    margin-bottom: 50px;*/
+    margin-bottom: 50px;
 }
 #qrCodeCol {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    gap: 20px;*/
+    gap: 20px;
 }
 #qrCodeCol img {
     max-width: 100%;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+#oldiesBox {
+    font-size: 1.2em;
+    border: 2px solid #26c47f;
+    border-radius: 50px;
+
+    background-color: rgba(105, 204, 163, 0.245); /*rgba(81, 23, 23, 0.245)*/
+    
+    padding: 20px;
+    margin: 20px;
+
+    padding-top: 80px;
+
+    position: relative;
+}
+#oldiesLyrics {
+    margin-top: 60px;
+}
+#oldiesBox #oldiesIcon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #24a969; /*#c7b93a*/
+    font-size: 2em;
 }
