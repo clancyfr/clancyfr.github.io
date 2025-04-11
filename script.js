@@ -176,7 +176,7 @@ translateEN.onclick = () => {
     translateAll();
 };
 
-window.onload = () => {
+document.addEventListener('DOMContentLoaded', function() {
     concerts.forEach((concert, index) => {
         addOptionToSelect(dateSelect, index, concert.Name);
     });
@@ -187,7 +187,7 @@ window.onload = () => {
     } else {
         translateFR.classList.add("selectable");
     }
-}
+});
 
 function ensureElementPartiallyVisible(selector, minVisiblePixels = 10) {
     const element = document.querySelector(selector);
