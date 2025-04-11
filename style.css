@@ -173,7 +173,7 @@ html {
     gap: 20px;
 }
 #qrCodeCol img {
-    max-width: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
