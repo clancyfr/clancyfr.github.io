@@ -27,6 +27,7 @@ const concerts = [
             "312": "blanc",
             "313": "blanc",
             "314": "bleu",
+            "322": "bleu",
             "Fosse": ["bleu", "blanc", "rouge"]
         }
     },
