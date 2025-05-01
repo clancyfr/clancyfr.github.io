@@ -73,7 +73,7 @@ const translations = {
         "Lyon (24 Avril)": "Lyon (April 24th)",
         "Paris (2 Mai)": "Paris (May 2nd)",
         "explanation1": "Select your show and location to be assigned a color.",
-        "explanation2": "At the end of <b>Mulberry Street</b>, on Tyler's instructions : put your phone on max brightness, show your color, and point your screen towards the stage when it's your turn.",
+        "explanation2": "During <u>Mulberry Street</u>, <b>on Tyler's instructions, instead of your flashlight</b> : put your phone on max brightness, show your color, and point your screen towards the stage when it's your turn.",
         "explanation3": "<b>Note :</b> Don't hesitate to screenshot the color for easier access later.",
         "explanation4": "During the break at the end of <b>Paladin Strait</b>, sing the last chorus of <b>Oldies Stations</b> with us.",
         "share": "Share the project with your neighbors"
@@ -87,7 +87,7 @@ const translations = {
         "blocColorSL": "La couleur qui vous a été attribuée est le",
         "displayOverlay": "Afficher la couleur en plein écran",
         "explanation1": "Selectionnez votre concert et votre emplacement pour recevoir votre couleur.",
-        "explanation2": "À la fin de <b>Mulberry Street</b>, au signal de Tyler : mettez votre luminosité au maximum, affichez votre couleur et pointez votre écran vers la scène quand c'est votre tour.",
+        "explanation2": "Pendant <u>Mulberry Street</u>, <b>au signal de Tyler, à la place de votre flash</b> : mettez votre luminosité au maximum, affichez votre couleur et pointez votre écran vers la scène quand c'est votre tour.",
         "explanation3": "<b>Note :</b> N'hésitez pas à faire une capture d'écran de votre couleur pour y accéder plus facilement après.",
         "explanation4": "Pendant la pause à la fin de <b>Paladin Strait</b>, chantez le dernier couplet de <b>Oldies Stations</b> avec nous.",
         "share": "Partagez le projet avec vos voisins"
