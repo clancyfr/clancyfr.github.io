@@ -1,105 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lettres FPE - Leg Européenne</title>
+        <title>Lettres FPE - Tournée Européenne</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body {
-                text-align: center;
-                font-size: 20px;
-
-                background-color: #f5edd6;
-            }
-
-            #summary {
-                font-size: 40px;
-
-                a {
-                    color: #b71731;
-                }
-
-                a:hover {
-                    color: #af9d27;
-                }
-            }
-
-            #letters {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .letter {
-                /*height: 100px;*/
-                border: 2px solid black;
-                border-radius: 20px;
-
-                display: flex;
-                flex-direction: row;
-                gap: 5px;
-
-                padding: 10px;
-            }
-
-            .letter div {
-                width: 33.3%;
-            }
-
-            @media (max-width: 768px) {
-                .letter {
-                    flex-direction: column;
-                }
-
-                .letter div {
-                    width: 100%;
-                }
-
-                .letter div:nth-child(1) {
-                    order: 2;
-                }
-                .letter div:nth-child(2) {
-                    order: 1;
-                }
-                .letter div:nth-child(3) {
-                    order: 3;
-                }
-            }
-
-            .letter div img {
-                width: 100%;
-            }
-
-            .lettertext {
-                text-align: left;
-                white-space: pre-line;
-            }
-
-            #scrollup {
-                position: fixed;
-                right: 50px;
-                bottom: 50px;
-                font-size: 40px;
-                background-color: rgba(120, 12, 12, 0.8);
-                width: 50px;
-                height: 50px;
-                border-radius: 10px;
-                text-decoration: none;
-                color: #ffffff;
-            }
-
-            #language {
-                position: absolute;
-                right: 20px;
-                top: 10px;
-
-                a {
-                    color: #000000;
-                }
-            }
-        </style>
+        
+        <link rel="stylesheet" href="../letterassets/style.css">
     </head>
     <body>
-        <h1>Lettres de la leg européenne</h1>
+        <h1>Lettres de la tournée européenne</h1>
         <div id="summary">
             <a href="#letter1">N</a>
             <a href="#letter2">I</a>
@@ -114,7 +22,7 @@
         </div>
         <div id="letters">
             <div class="letter">
-                <div><a href="../images/000.jpg" target="_blank"><img src="../images/000.jpg"></a></div>
+                <div><a href="../letterassets/000.jpg" target="_blank"><img src="../letterassets/000.jpg"></a></div>
                 <div class="lettertext">
                     CLANCY,
                     N'OUBLIE JAMAIS LES CRIS DE TON PEUPLE
@@ -127,7 +35,7 @@
                 </div>
             </div>
             <div class="letter" id="letter1">
-                <div><a href="../images/001_01.jpg" target="_blank"><img src="../images/001_01.jpg"></a></div>
+                <div><a href="../letterassets/001_01.jpg" target="_blank"><img src="../letterassets/001_01.jpg"></a></div>
                 <div class="lettertext"><h2>Lettre #001</h2>
                     Soren,
                     Pour la première fois depuis longtemps, je n'ai pas entendu ta musique hier soir. Quelque chose de si constant et fiable, j'ai réalisé que je la prenais pour acquise; c'était si évident hier soir quand j'ai entendu le silence. Mais nous en avons besoin. Tes cordes résonnent dans la vallée et sonnent si bien dans ma tente. C'est devenu ma sérénade dans ces collines - l'écho d'un souvenir subtil qui me calme et me rappelle que je suis à la maison. Je compte sur lui, et je pense qu'on en a tous besoin. Je suis reconnaissante pour les écharpes qui réchauffent mon visage et les manteaux qui m'isolent, mais cette mélodie éternelle que tu envoie à travers les montagnes, elle m'enveloppe. Elle nous enveloppe tous. Elle nous rappelle qui on est, et ce que ça veut dire d'être libre. J'espère que tu vas bien. J'espère t'entendre jouer à nouveau un jour.
@@ -136,10 +44,10 @@
 
                     <span><b>-.</b> = N</span>
                 </div>
-                <div><a href="../images/001_02.jpg" target="_blank"><img src="../images/001_02.jpg"></a></div>
+                <div><a href="../letterassets/001_02.jpg" target="_blank"><img src="../letterassets/001_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter2">
-                <div><a href="../images/002_01.jpg" target="_blank"><img src="../images/002_01.jpg"></a></div>
+                <div><a href="../letterassets/002_01.jpg" target="_blank"><img src="../letterassets/002_01.jpg"></a></div>
                 <div class="lettertext"><h2>Lettre #002</h2>
                     Carmen,
                     Je suis toujours là. Merci pour ta lettre. De temps en temps, je me sens tellement isolé devant ce feu que j'oublie que des gens écoutent. D'habitude, il n'y a que moi là haut, une vigie sans partenaire - qui essaie de se maintenir éveillé en grattant cet instrument. Donc je parle à quelqu'un, à vous tous. Je suis content de savoir que vous l'entendez, et surtout que c'est important pour vous. Je suis gêné d'admettre que je me suis endormi pendant une seconde la nuit dernière. J'étais si inquiet de m'endormir à nouveau que je n'ai pas joué de musique, je suis seulement resté debout à surveiller par dessus la colline toute la nuit. Je ne veux pas manquer le signal. Je n'ai pas perdu foi en notre plan, et je sais que le signal va arriver, mais certaines nuit c'est dur de rester éveillé. Je continuerai à jouer. De temps en temps, si tu n'es pas trop fatiguée, j'adorerais avoir de la compagnie. Quatre yeux valent mieux que deux - et le signal devrait arriver d'un jour à l'autre maintenant.
@@ -148,18 +56,18 @@
 
                     <span><b>..</b> = I</span>
                 </div>
-                <div><a href="../images/002_02.jpg" target="_blank"><img src="../images/002_02.jpg"></a></div>
+                <div><a href="../letterassets/002_02.jpg" target="_blank"><img src="../letterassets/002_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter3">
-                <div><a href="../images/003_01.jpg" target="_blank"><img src="../images/003_01.jpg"></a></div>
+                <div><a href="../letterassets/003_01.jpg" target="_blank"><img src="../letterassets/003_01.jpg"></a></div>
                 <div class="lettertext"><h2>Lettre #003</h2>
                     Brikka,
                     J'ai trouvé quelque chose. Vers le fond du canyon de l'est, près de la base de l'arbre des vautours, il y a une petite grotte. J'y suis retourné ces derniers jours pour essayer de documenter tout ce que je peux. Les murs sont remplis d'art et de symboles. Ça a l'air vieux, genre très vieux. Certaines parties sont peintes et d'autres sont gravées - mais gravées [...] pour maintenant être érodées et lissées. [...]
                 </div>
-                <div><!-- <a href="../images/003_02.jpg" target="_blank"><img src="../images/003_02.jpg"></a> --></div>
+                <div><!-- <a href="../letterassets/003_02.jpg" target="_blank"><img src="../letterassets/003_02.jpg"></a> --></div>
             </div>
             <div class="letter" id="letter4">
-                <div><a href="../images/004_01.jpg" target="_blank"><img src="../images/004_01.jpg"></a></div>
+                <div><a href="../letterassets/004_01.jpg" target="_blank"><img src="../letterassets/004_01.jpg"></a></div>
                 <div class="lettertext"><h2>Lettre #004</h2>
                     Cher Preston,
                     J'ai hâte de la voir. Je me suis toujours demandé qui habitait ces collines avant nous.
@@ -168,20 +76,20 @@
 
                     <span><b>-.</b> = N</span>
                 </div>
-                <div><a href="../images/004_02.jpg" target="_blank"><img src="../images/004_02.jpg"></a></div>
+                <div><a href="../letterassets/004_02.jpg" target="_blank"><img src="../letterassets/004_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter5">
-                <div><a href="../images/005_01.jpg" target="_blank"><img src="../images/005_01.jpg"></a></div>
+                <div><a href="../letterassets/005_01.jpg" target="_blank"><img src="../letterassets/005_01.jpg"></a></div>
                 <div class="lettertext"><h2>Lettre #005</h2>
                     Hilt, 
                     Est-ce qu'il t'arrive d'observer l'horizon en te demandant à quoi il ressemblerait sans la silhouette de Dema ? Une ligne infinie de beauté, ininterrompue par le système qui nous as pollués. Qu'est ce que ça aurait été d'être né ici sans avoir jamais été contraint de vivre de façon si peu naturelle ?
                     Qu'est-ce qui aurait été différent ? Est-ce que nous serions moins réservés, moins tourmentés ? De quoi est-ce que nous rêverions ? Je regarde souvent ces neuf piliers arrogants, et me demande ce qu'ils nous ont réellement pris. Je ne sais pas - je me demande juste si tu t'es déjà senti aussi fasciné par l'idée d'un horizon alternatif, ou alors peut-être que j'ai besoin de sommeil.
                     -Gwen
                 </div>
-                <div><a href="../images/005_02.jpg" target="_blank"><img src="../images/005_02.jpg"></a></div>
+                <div><a href="../letterassets/005_02.jpg" target="_blank"><img src="../letterassets/005_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter6">
-                <div><a href="../images/006_01.jpg" target="_blank"><img src="../images/006_01.jpg"></a></div>
+                <div><a href="../letterassets/006_01.jpg" target="_blank"><img src="../letterassets/006_01.jpg"></a></div>
                 <div class="lettertext"><h2>Lettre #006</h2>
                     Gwen,
                     Réjouis-toi ! Nous ne sommes plus là bas. Nous avons regagné le contrôle de nos vies et de nos choix, et nous devrions nous souvenir de Dema comme un triomphe. Sans elle, nous n'aurions jamais appris à nous battre. Nous aurions pris tout cette liberté pour acquise. La douleur de cet endroit fait de ces collines sauvages et cette grotte des refuges. Nous sommes nous-même ici, et nous n'aurions jamais eu cela sans elles. Tu as défait cet endroit, et je suis fier de toi.
@@ -189,18 +97,18 @@
 
                     <span><b>.</b> = E</span>
                 </div>
-                <div><a href="../images/006_02.jpg" target="_blank"><img src="../images/006_02.jpg"></a></div>
+                <div><a href="../letterassets/006_02.jpg" target="_blank"><img src="../letterassets/006_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter7">
-                <div><a href="../images/007_01.jpg" target="_blank"><img src="../images/007_01.jpg"></a></div>
+                <div><a href="../letterassets/007_01.jpg" target="_blank"><img src="../letterassets/007_01.jpg"></a></div>
                 <div class="lettertext"><h2>Lettre #007</h2>
                     Tari,
                     Je me suis surpris à ressasser mes souvenirs du bishop/evêque Nills la nuit dernière. Il y a longtemps, il m'a sauvé alors que j'ai manqué de tomber en arrière par une fenêtre en jouant au tir à la corde. Il était là, et il m'a attrapé. Je l'ai regardé, et le soulagement dans ses yeux que je n'aie rien m'a pris au dépourvu. À ce moment, il se souciait de moi. Il n'était pas si dépourvu [...] Il n'y avait pas de tensions [...]
                 </div>
-                <div><!-- <a href="../images/007_02.jpg" target="_blank"><img src="../images/007_02.jpg"></a> --></div>
+                <div><!-- <a href="../letterassets/007_02.jpg" target="_blank"><img src="../letterassets/007_02.jpg"></a> --></div>
             </div>
             <div class="letter" id="letter8">
-                <div><a href="../images/008_01.jpg" target="_blank"><img src="../images/008_01.jpg"></a></div>
+                <div><a href="../letterassets/008_01.jpg" target="_blank"><img src="../letterassets/008_01.jpg"></a></div>
                 <div class="lettertext"><h2>Lettre #008</h2>
                     Wendt,
                     Je me souviens de ce jour, un rare moment de chaos dans les murs parfaits de Dema. Je suis content qu'il t'ait attrapé, mais je dois admettre que je trouve consternant de te voir décrire un bishop/evêque comme ça. Ils nous réprimandent, mais ils prétendent nous protéger. C'est difficile à dire si ils nous détestent ou nous aiment. Si c'est de l'amour, c'en est une forme que je ne reconnait pas, et c'en est une forme qui ne se ressent certainement pas comme tel. Tout ça ressemble à un piège. Je ne sais pas si je me suis déjà demandé qui les bishops/évêques étaient quand ils étaient enfants, ou même si ils ont jamais été enfants. À mesure que je vieillis, je me pose de plus en plus de questions sur leurs âges.
@@ -208,20 +116,20 @@
 
                     <span><b>-</b> = T</span>
                 </div>
-                <div><a href="../images/008_02.jpg" target="_blank"><img src="../images/008_02.jpg"></a></div>
+                <div><a href="../letterassets/008_02.jpg" target="_blank"><img src="../letterassets/008_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter9">
-                <div><a href="../images/009_01.jpg" target="_blank"><img src="../images/009_01.jpg"></a></div>
+                <div><a href="../letterassets/009_01.jpg" target="_blank"><img src="../letterassets/009_01.jpg"></a></div>
                 <div class="lettertext"><h2>Lettre #009</h2>
                     Magnus,
                     Je suppose que tu es de retour à la base. Nous avons trouvé un endroit dans le périmètre extérieur de Dema, et nous avons établi notre camp là bas. Nous sommes arrivés en pensant enregistrer les routines des gardes, et revenir aver leurs horaires. Mais les choses bougent vite.
 
                     Magnus ! Clancy l'a fait ! La première ligne a réussi à percer les gardes, pendant qu'il trouvait une manière d'entrer dans la ville [...]
                 </div>
-                <div><!-- <a href="../images/009_02.jpg" target="_blank"><img src="../images/009_02.jpg"></a> --></div>
+                <div><!-- <a href="../letterassets/009_02.jpg" target="_blank"><img src="../letterassets/009_02.jpg"></a> --></div>
             </div>
             <div class="letter" id="letter10">
-                <div><!-- <a href="../images/010_01.jpg" target="_blank"><img src="../images/010_01.jpg"></a> --></div>
+                <div><!-- <a href="../letterassets/010_01.jpg" target="_blank"><img src="../letterassets/010_01.jpg"></a> --></div>
                 <div class="lettertext"><h2>Lettre #010</h2>
                     [...] Nous formons un seul et même peuple, aspirant à l'espoir et la victoire, pas plus de tyrannie. Clancy doit le savoir !
                     Anxieux/Effrayé,
@@ -229,7 +137,7 @@
 
                     <span><b>-.</b> = N</span>
                 </div>
-                <div><a href="../images/010_02.jpg" target="_blank"><img src="../images/010_02.jpg"></a></div>
+                <div><a href="../letterassets/010_02.jpg" target="_blank"><img src="../letterassets/010_02.jpg"></a></div>
             </div>
         </div>
         <a href="#">

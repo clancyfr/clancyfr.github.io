@@ -1,104 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lettres FPE - Europan leg</title>
+        <title>FPE letters - Europan leg</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <style>
-            body {
-                text-align: center;
-                font-size: 20px;
-
-                background-color: #f5edd6;
-            }
-
-            #summary {
-                font-size: 40px;
-
-                a {
-                    color: #b71731;
-                }
-
-                a:hover {
-                    color: #af9d27;
-                }
-            }
-
-            #letters {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .letter {
-                /*height: 100px;*/
-                border: 2px solid black;
-                border-radius: 20px;
-
-                display: flex;
-                flex-direction: row;
-                gap: 5px;
-
-                padding: 10px;
-            }
-
-            .letter div {
-                width: 33.3%;
-            }
-
-            @media (max-width: 768px) {
-                .letter {
-                    flex-direction: column;
-                }
-
-                .letter div {
-                    width: 100%;
-                }
-
-                .letter div:nth-child(1) {
-                    order: 2;
-                }
-                .letter div:nth-child(2) {
-                    order: 1;
-                }
-                .letter div:nth-child(3) {
-                    order: 3;
-                }
-            }
-
-
-            .letter div img {
-                width: 100%;
-            }
-
-            .lettertext {
-                text-align: left;
-                white-space: pre-line;
-            }
-
-            #scrollup {
-                position: fixed;
-                right: 50px;
-                bottom: 50px;
-                font-size: 40px;
-                background-color: rgba(120, 12, 12, 0.8);
-                width: 50px;
-                height: 50px;
-                border-radius: 10px;
-                text-decoration: none;
-                color: #ffffff;
-            }
-
-            #language {
-                position: absolute;
-                right: 20px;
-                top: 10px;
-
-                a {
-                    color: #000000;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="../letterassets/style.css">
     </head>
     <body>
         <h1>European leg letters</h1>
@@ -116,7 +22,7 @@
         </div>
         <div id="letters">
             <div class="letter">
-                <div><a href="../images/000.jpg" target="_blank"><img src="../images/000.jpg"></a></div>
+                <div><a href="../letterassets/000.jpg" target="_blank"><img src="../letterassets/000.jpg"></a></div>
                 <div class="lettertext">
                     CLANCY,
                     NEVER FORGET THE CRIES OF YOUR PEOPLE
@@ -129,7 +35,7 @@
                 </div>
             </div>
             <div class="letter" id="letter1">
-                <div><a href="../images/001_01.jpg" target="_blank"><img src="../images/001_01.jpg"></a></div>
+                <div><a href="../letterassets/001_01.jpg" target="_blank"><img src="../letterassets/001_01.jpg"></a></div>
                 <div class="lettertext"><h2>Letter #001</h2>
                     Soren,
                     For the first time in a long time, I didn't hear your song last night. Something so consistent and reliable, I realized that I take it for granted, so much more evident last night when I heard silence. But we need it. Your strings echo out from the valley and hit my tent just right. It's become my serenade in these hills - a reverberation of subtle memory that calms me and lets me know that I am home. I rely on it, and I think we all need it. I'm grateful for scarves to warm my face, and coats to insulate me, but this everlasting melody that you send through these mountains, it covers me. It covers all of us. It reminds us who we are, and what it means to be free. I hope you're okay. I hope to hear you play again.
@@ -138,10 +44,10 @@
 
                     <span><b>-.</b> = N</span>
                 </div>
-                <div><a href="../images/001_02.jpg" target="_blank"><img src="../images/001_02.jpg"></a></div>
+                <div><a href="../letterassets/001_02.jpg" target="_blank"><img src="../letterassets/001_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter2">
-                <div><a href="../images/002_01.jpg" target="_blank"><img src="../images/002_01.jpg"></a></div>
+                <div><a href="../letterassets/002_01.jpg" target="_blank"><img src="../letterassets/002_01.jpg"></a></div>
                 <div class="lettertext"><h2>Letter #002</h2>
                     Carmen,
                     I'm still here. Thank you for your letter. At times, I feel so isolated in front of that small fire that I forget people are listening. It's usually just me up there, a watcher without a partner -- trying to keep myself awake by noodling on this instrument. So I speak to someone, to all of you. I'm glad to know you hear it, and more importantly that it's important. I'm embarrassed to admit that I fell asleep for a second last night. I was so worried of dozing off again, that I didn't play music, just stood at attention all night, looking over the hill. I don't want to miss the signal. I haven't lost faith in the plan, and I know the signal is coming, but some nights it's hard to stay awake. I'll keep playing. Sometime, if you're not too tired, I would love company. Four eyes are better than two -- and they should give us the sign any day now.
@@ -150,18 +56,18 @@
 
                     <span><b>..</b> = I</span>
                 </div>
-                <div><a href="../images/002_02.jpg" target="_blank"><img src="../images/002_02.jpg"></a></div>
+                <div><a href="../letterassets/002_02.jpg" target="_blank"><img src="../letterassets/002_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter3">
-                <div><a href="../images/003_01.jpg" target="_blank"><img src="../images/003_01.jpg"></a></div>
+                <div><a href="../letterassets/003_01.jpg" target="_blank"><img src="../letterassets/003_01.jpg"></a></div>
                 <div class="lettertext"><h2>Letter #003</h2>
                     Brikka,
                     I've found something. Towards the bottom of the East Canyon, near the base of the Vulture Tree is a small cave. I've been coming back to it for the last few days, trying to document everything I can. The walls are filled with art and symbols. It looks old, like very old. Some of the art is stained into the stone, and some was carved - but carved [...] to now be weathered and smoothed over. [...]
                 </div>
-                <div><!-- <a href="../images/003_02.jpg" target="_blank"><img src="../images/003_02.jpg"></a> --></div>
+                <div><!-- <a href="../letterassets/003_02.jpg" target="_blank"><img src="../letterassets/003_02.jpg"></a> --></div>
             </div>
             <div class="letter" id="letter4">
-                <div><a href="../images/004_01.jpg" target="_blank"><img src="../images/004_01.jpg"></a></div>
+                <div><a href="../letterassets/004_01.jpg" target="_blank"><img src="../letterassets/004_01.jpg"></a></div>
                 <div class="lettertext"><h2>Letter #004</h2>
                     Dear Preston,
                     I can't wait to see it. I've always wondered who inhabited these hills before us. This is one of the most crippling elements of Vialism, that they withold the past from us, and try to make us believe their teachings are all that there have ever been. It means that we are not the first to leave Dema, and to rebel against that system. How long has this system existed? How long have these hills been inhabited. What else is out there in Trench? The hunt for answers continues.
@@ -169,19 +75,19 @@
 
                     <span><b>-.</b> = N</span>
                 </div>
-                <div><a href="../images/004_02.jpg" target="_blank"><img src="../images/004_02.jpg"></a></div>
+                <div><a href="../letterassets/004_02.jpg" target="_blank"><img src="../letterassets/004_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter5">
-                <div><a href="../images/005_01.jpg" target="_blank"><img src="../images/005_01.jpg"></a></div>
+                <div><a href="../letterassets/005_01.jpg" target="_blank"><img src="../letterassets/005_01.jpg"></a></div>
                 <div class="lettertext"><h2>Letter #005</h2>
                     Hilt,
                     Do you ever stare at the horizon, wondering what it would look like without Dema's silhouette? An unending line of beauty, uninterrupted by the system that polluted us. What would it have been like to have been born out here and never forced into living so unnaturally? Would we be different? Would we be less guarded, and less tormented? What would we dream of? I often stare at those nine posts of arrogance and wonder what they truly took for me. I don't know -- just wondering if you've ever found yourself as fascinated with the thought of an alternate horizon, or maybe I need to get to sleep.
                     -Gwen
                 </div>
-                <div><a href="../images/005_02.jpg" target="_blank"><img src="../images/005_02.jpg"></a></div>
+                <div><a href="../letterassets/005_02.jpg" target="_blank"><img src="../letterassets/005_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter6">
-                <div><a href="../images/006_01.jpg" target="_blank"><img src="../images/006_01.jpg"></a></div>
+                <div><a href="../letterassets/006_01.jpg" target="_blank"><img src="../letterassets/006_01.jpg"></a></div>
                 <div class="lettertext"><h2>Letter #006</h2>
                     Gwen,
                     Cheer up! We're not there anymore! We've regained control of our lives and our choices, and we should look back upon Dema in Triumph. Without it, we would have never learned to fight. Without it, we would have taken all of this freedom for granted. The pain of that place makes these wild hills and caves more of a retreat. We are ourselves out here, and we would have never found it without them. You defeated that place, and I'm proud of you.
@@ -189,18 +95,18 @@
 
                     <span><b>.</b> = E</span>
                 </div>
-                <div><a href="../images/006_02.jpg" target="_blank"><img src="../images/006_02.jpg"></a></div>
+                <div><a href="../letterassets/006_02.jpg" target="_blank"><img src="../letterassets/006_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter7">
-                <div><a href="../images/007_01.jpg" target="_blank"><img src="../images/007_01.jpg"></a></div>
+                <div><a href="../letterassets/007_01.jpg" target="_blank"><img src="../letterassets/007_01.jpg"></a></div>
                 <div class="lettertext"><h2>Letter #007</h2>
                     Tari,
                     I found myself reminiscing about Bishop Nills last night. A long while back he actually rescued me from nearly falling back through a window while playing tug-o-war in class. He was there and he caught me. I looked up at him and the relief in his eyes that I was alright caught me so off-guard. In that moment he cared for me. He wasn't as devoid [...] There was no tension - [...]
                 </div>
-                <div><!-- <a href="../images/007_02.jpg" target="_blank"><img src="../images/007_02.jpg"></a> --></div>
+                <div><!-- <a href="../letterassets/007_02.jpg" target="_blank"><img src="../letterassets/007_02.jpg"></a> --></div>
             </div>
             <div class="letter" id="letter8">
-                <div><a href="../images/008_01.jpg" target="_blank"><img src="../images/008_01.jpg"></a></div>
+                <div><a href="../letterassets/008_01.jpg" target="_blank"><img src="../letterassets/008_01.jpg"></a></div>
                 <div class="lettertext"><h2>Letter #008</h2>
                     Wendt,
                     I remember that day. A rare moment of Chaos inside the perfect walls of Dema. I'm glad he caught you, but I have to admit I find it appalling to see you write about a Bishop the way you have. They berate us, but also claim to protect us. It's hard to tell if we are hated or loved. If it is love, it's a form that I cannot recognize, and it's a form that certainly doesn't feel like love. It all feels like a trap. Not sure I've wondered about who the bishops were as kids, or even if they ever were kids. As I get older, I question their age more and more.
@@ -208,20 +114,20 @@
 
                     <span><b>-</b> = T</span>
                 </div>
-                <div><a href="../images/008_02.jpg" target="_blank"><img src="../images/008_02.jpg"></a></div>
+                <div><a href="../letterassets/008_02.jpg" target="_blank"><img src="../letterassets/008_02.jpg"></a></div>
             </div>
             <div class="letter" id="letter9">
-                <div><a href="../images/009_01.jpg" target="_blank"><img src="../images/009_01.jpg"></a></div>
+                <div><a href="../letterassets/009_01.jpg" target="_blank"><img src="../letterassets/009_01.jpg"></a></div>
                 <div class="lettertext"><h2>Letter #009</h2>
                     Magnus,
                     I assume you're back at base. We've found a spot on the outer perimeter of Dema, and set up camp here. We arrived thinking we would log the routines of the guards, and report back with their schedule. But things are moving fast.
                     
                     Magnus! Clancy has done it! The front line was able to push through the guards, while he found a way into the city [...]
                 </div>
-                <div><!-- <a href="../images/009_02.jpg" target="_blank"><img src="../images/009_02.jpg"></a> --></div>
+                <div><!-- <a href="../letterassets/009_02.jpg" target="_blank"><img src="../letterassets/009_02.jpg"></a> --></div>
             </div>
             <div class="letter" id="letter10">
-                <div><!-- <a href="../images/010_01.jpg" target="_blank"><img src="../images/010_01.jpg"></a> --></div>
+                <div><!-- <a href="../letterassets/010_01.jpg" target="_blank"><img src="../letterassets/010_01.jpg"></a> --></div>
                 <div class="lettertext"><h2>Letter #010</h2>
                     [...] We are all one people, and people striving for hope and victory, not more tyranny. Clancy must know that!
                     Fraught,
@@ -229,7 +135,7 @@
 
                     <span><b>-.</b> = N</span>
                 </div>
-                <div><a href="../images/010_02.jpg" target="_blank"><img src="../images/010_02.jpg"></a></div>
+                <div><a href="../letterassets/010_02.jpg" target="_blank"><img src="../letterassets/010_02.jpg"></a></div>
             </div>
         </div>
         <a href="#">
