@@ -8,11 +8,11 @@ body {
 #summary {
     font-size: 40px;
 
-    a, a:link, a:visited {
+    a {
         color: #b71731;
     }
 
-    a:hover, a:active {
+    a:hover {
         color: #af9d27;
     }
 }
